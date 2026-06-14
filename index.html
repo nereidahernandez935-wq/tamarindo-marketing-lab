@@ -24,10 +24,10 @@ line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#003366,#0066cc);
+background:linear-gradient(135deg,#003366,#0077cc);
 color:white;
-padding:60px 20px;
 text-align:center;
+padding:60px 20px;
 }
 
 header h1{
@@ -46,6 +46,7 @@ text-align:center;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 nav a{
@@ -55,6 +56,10 @@ font-weight:bold;
 margin:0 15px;
 }
 
+nav a:hover{
+color:#0077cc;
+}
+
 section{
 max-width:1200px;
 margin:auto;
@@ -62,9 +67,9 @@ padding:50px 20px;
 }
 
 h2{
+text-align:center;
 color:#003366;
 margin-bottom:20px;
-text-align:center;
 }
 
 .servicios{
@@ -78,20 +83,39 @@ background:white;
 padding:20px;
 border-radius:12px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#003366;
+margin-bottom:10px;
 }
 
 .galeria{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+text-align:center;
 }
 
 .galeria img{
 width:100%;
-height:250px;
+max-width:300px;
+height:180px;
 object-fit:cover;
 border-radius:12px;
 box-shadow:0 2px 8px rgba(0,0,0,0.15);
+display:block;
+margin:auto;
+}
+
+.galeria p{
+margin-top:10px;
+font-weight:bold;
 }
 
 .contacto{
@@ -125,15 +149,7 @@ margin-top:40px;
 
 <nav>
 
-<a href="#inicio">Inicio</a>
-
-<a href="#nosotros">Nosotros</a>
-
-<a href="#servicios">Servicios</a>
-
-<a href="#galeria">Galería</a>
-
-<a href="#contacto">Contacto</a>
+<a href="#inicio">Inicio</a> <a href="#nosotros">Nosotros</a> <a href="#servicios">Servicios</a> <a href="#galeria">Galería</a> <a href="#contacto">Contacto</a>
 
 </nav>
 
@@ -144,7 +160,7 @@ margin-top:40px;
 <p>
 Bienvenido a Tamarindo Marketing Lab, una agencia costarricense especializada en marketing digital, desarrollo web e inteligencia artificial.
 
-Ayudamos a empresas y emprendedores a fortalecer su presencia digital mediante estrategias innovadoras, creatividad y tecnología.
+Ayudamos a empresas y emprendedores a fortalecer su presencia digital mediante estrategias innovadoras, creatividad y tecnología para impulsar el crecimiento de sus negocios.
 
 </p>
 
@@ -155,10 +171,7 @@ Ayudamos a empresas y emprendedores a fortalecer su presencia digital mediante e
 <h2>Quiénes Somos</h2>
 
 <p>
-Tamarindo Marketing Lab es una agencia dedicada a impulsar el crecimiento de empresas mediante soluciones digitales modernas.
-
-Nuestro equipo combina marketing, diseño, análisis de datos e inteligencia artificial para desarrollar estrategias efectivas y adaptadas a las necesidades de cada cliente.
-
+Tamarindo Marketing Lab es una agencia enfocada en ofrecer soluciones digitales modernas para pequeñas y medianas empresas. Nuestro objetivo es combinar creatividad, tecnología e inteligencia artificial para ayudar a nuestros clientes a alcanzar sus metas comerciales.
 </p>
 
 <br>
@@ -174,7 +187,7 @@ Brindar soluciones innovadoras de marketing digital apoyadas por inteligencia ar
 <h3>Visión</h3>
 
 <p>
-Convertirnos en una agencia líder en Costa Rica en estrategias digitales y transformación tecnológica.
+Ser una agencia líder en Costa Rica en estrategias digitales, innovación y transformación tecnológica.
 </p>
 
 </section>
@@ -187,32 +200,32 @@ Convertirnos en una agencia líder en Costa Rica en estrategias digitales y tran
 
 <div class="card">
 <h3>Gestión de Redes Sociales</h3>
-<p>Creación y administración de contenido para redes sociales.</p>
+<p>Planificación y administración de contenido para Facebook, Instagram, TikTok y LinkedIn.</p>
 </div>
 
 <div class="card">
 <h3>Diseño Gráfico</h3>
-<p>Diseño de logotipos, banners y material promocional.</p>
+<p>Creación de logotipos, banners, publicaciones y material promocional.</p>
 </div>
 
 <div class="card">
 <h3>Desarrollo Web</h3>
-<p>Creación de sitios web modernos y responsivos.</p>
+<p>Diseño y creación de sitios web modernos, rápidos y adaptables.</p>
 </div>
 
 <div class="card">
 <h3>Automatización con IA</h3>
-<p>Implementación de herramientas inteligentes para optimizar procesos.</p>
+<p>Implementación de herramientas inteligentes para optimizar procesos empresariales.</p>
 </div>
 
 <div class="card">
 <h3>Creación de Contenido</h3>
-<p>Generación de contenido digital para marcas y empresas.</p>
+<p>Desarrollo de contenido digital atractivo para fortalecer marcas.</p>
 </div>
 
 <div class="card">
 <h3>Consultoría Digital</h3>
-<p>Asesoramiento para procesos de transformación digital.</p>
+<p>Asesoría para empresas interesadas en iniciar su transformación digital.</p>
 </div>
 
 </div>
@@ -225,9 +238,15 @@ Convertirnos en una agencia líder en Costa Rica en estrategias digitales y tran
 
 <div class="galeria">
 
+<div>
 <img src="marketing.jpg.png" alt="Marketing Digital">
+<p>Estrategias de Marketing Digital</p>
+</div>
 
+<div>
 <img src="ia.jpg.png" alt="Inteligencia Artificial">
+<p>Soluciones con Inteligencia Artificial</p>
+</div>
 
 </div>
 
