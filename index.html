@@ -1,128 +1,61 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tamarindo Marketing Lab</title>
 
 <style>
 
-*{
+body{
+font-family: Arial, sans-serif;
 margin:0;
 padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, sans-serif;
-background:#f4f7fb;
-color:#333;
 line-height:1.6;
+background:#f4f4f4;
 }
 
 header{
-background:linear-gradient(135deg,#003366,#0077cc);
+background:#003366;
 color:white;
+padding:30px;
 text-align:center;
-padding:60px 20px;
-}
-
-header h1{
-font-size:3rem;
-margin-bottom:10px;
-}
-
-header p{
-font-size:1.2rem;
 }
 
 nav{
-background:white;
+background:#00509e;
 padding:15px;
 text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:1000;
 }
 
 nav a{
+color:white;
 text-decoration:none;
-color:#003366;
+margin:15px;
 font-weight:bold;
-margin:0 15px;
-}
-
-nav a:hover{
-color:#0077cc;
 }
 
 section{
-max-width:1200px;
-margin:auto;
-padding:50px 20px;
+padding:40px;
+background:white;
+margin:20px;
+border-radius:10px;
 }
 
 h2{
-text-align:center;
 color:#003366;
-margin-bottom:20px;
-}
-
-.servicios{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:#003366;
-margin-bottom:10px;
 }
 
 .galeria{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-text-align:center;
+gap:15px;
 }
 
 .galeria img{
 width:100%;
-max-width:300px;
-height:180px;
-object-fit:cover;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,0.15);
-display:block;
-margin:auto;
-}
-
-.galeria p{
-margin-top:10px;
-font-weight:bold;
-}
-
-.contacto{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+border-radius:10px;
 }
 
 footer{
@@ -130,7 +63,7 @@ background:#003366;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
+margin-top:20px;
 }
 
 </style>
@@ -140,113 +73,77 @@ margin-top:40px;
 <body>
 
 <header>
-
 <h1>Tamarindo Marketing Lab</h1>
-
 <p>Innovación digital impulsada por inteligencia artificial</p>
-
 </header>
 
 <nav>
-
-<a href="#inicio">Inicio</a> <a href="#nosotros">Nosotros</a> <a href="#servicios">Servicios</a> <a href="#galeria">Galería</a> <a href="#contacto">Contacto</a>
-
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
 <section id="inicio">
-
 <h2>Inicio</h2>
-
 <p>
-Bienvenido a Tamarindo Marketing Lab, una agencia costarricense especializada en marketing digital, desarrollo web e inteligencia artificial.
-
-Ayudamos a empresas y emprendedores a fortalecer su presencia digital mediante estrategias innovadoras, creatividad y tecnología para impulsar el crecimiento de sus negocios.
-
+Bienvenido a Tamarindo Marketing Lab.
+Somos una agencia costarricense especializada en marketing digital,
+desarrollo web e inteligencia artificial.
+Ayudamos a empresas y emprendedores a fortalecer su presencia digital mediante estrategias innovadoras.
 </p>
-
 </section>
 
 <section id="nosotros">
-
 <h2>Quiénes Somos</h2>
 
-<p>
-Tamarindo Marketing Lab es una agencia enfocada en ofrecer soluciones digitales modernas para pequeñas y medianas empresas. Nuestro objetivo es combinar creatividad, tecnología e inteligencia artificial para ayudar a nuestros clientes a alcanzar sus metas comerciales.
-</p>
-
-<br>
-
 <h3>Misión</h3>
-
 <p>
-Brindar soluciones innovadoras de marketing digital apoyadas por inteligencia artificial para impulsar el crecimiento y competitividad de nuestros clientes.
+Brindar soluciones innovadoras de marketing digital apoyadas por inteligencia artificial.
 </p>
-
-<br>
 
 <h3>Visión</h3>
-
 <p>
-Ser una agencia líder en Costa Rica en estrategias digitales, innovación y transformación tecnológica.
+Ser una agencia líder en Costa Rica en soluciones digitales.
 </p>
 
+<h3>Valores</h3>
+<ul>
+<li>Innovación</li>
+<li>Creatividad</li>
+<li>Compromiso</li>
+<li>Responsabilidad</li>
+<li>Excelencia</li>
+</ul>
 </section>
 
 <section id="servicios">
-
 <h2>Servicios</h2>
 
-<div class="servicios">
-
-<div class="card">
-<h3>Gestión de Redes Sociales</h3>
-<p>Planificación y administración de contenido para Facebook, Instagram, TikTok y LinkedIn.</p>
-</div>
-
-<div class="card">
-<h3>Diseño Gráfico</h3>
-<p>Creación de logotipos, banners, publicaciones y material promocional.</p>
-</div>
-
-<div class="card">
-<h3>Desarrollo Web</h3>
-<p>Diseño y creación de sitios web modernos, rápidos y adaptables.</p>
-</div>
-
-<div class="card">
-<h3>Automatización con IA</h3>
-<p>Implementación de herramientas inteligentes para optimizar procesos empresariales.</p>
-</div>
-
-<div class="card">
-<h3>Creación de Contenido</h3>
-<p>Desarrollo de contenido digital atractivo para fortalecer marcas.</p>
-</div>
-
-<div class="card">
-<h3>Consultoría Digital</h3>
-<p>Asesoría para empresas interesadas en iniciar su transformación digital.</p>
-</div>
-
-</div>
+<ul>
+<li>Gestión de Redes Sociales</li>
+<li>Diseño Gráfico</li>
+<li>Desarrollo Web</li>
+<li>Automatización con IA</li>
+<li>Creación de Contenido Digital</li>
+<li>Consultoría Digital</li>
+</ul>
 
 </section>
 
 <section id="galeria">
-
 <h2>Galería</h2>
 
 <div class="galeria">
 
-<div>
-<img src="marketing.jpg.png" alt="Marketing Digital">
-<p>Estrategias de Marketing Digital</p>
-</div>
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
 
-<div>
-<img src="ia.jpg.png" alt="Inteligencia Artificial">
-<p>Soluciones con Inteligencia Artificial</p>
-</div>
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+
+<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07">
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
 
 </div>
 
@@ -256,26 +153,19 @@ Ser una agencia líder en Costa Rica en estrategias digitales, innovación y tra
 
 <h2>Contacto</h2>
 
-<div class="contacto">
+<p>Email: contacto@tamarindomarketinglab.com</p>
 
-<p><strong>Correo:</strong> contacto@tamarindomarketinglab.com</p>
+<p>Teléfono: +506 8888-8888</p>
 
-<p><strong>Teléfono:</strong> +506 8888-8888</p>
-
-<p><strong>Ubicación:</strong> San José, Costa Rica</p>
-
-<p><strong>Horario:</strong> Lunes a Viernes de 8:00 a.m. a 5:00 p.m.</p>
-
-</div>
+<p>San José, Costa Rica</p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Tamarindo Marketing Lab - Todos los derechos reservados.</p>
+<p>© 2026 Tamarindo Marketing Lab</p>
 
 </footer>
 
 </body>
-
 </html>
